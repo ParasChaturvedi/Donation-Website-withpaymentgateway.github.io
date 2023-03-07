@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="nil.png" type="image/png">
+        <title>Contact</title>
+        
+        <link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" href="linericon/style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body{
+		background-image:url("img/contactus.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		}
+		
+			
+		</style>
+    </head>
+<body style="background-color: #11131C;">
+       <script>
+	   function validation()
+	   {
+			var name=document.getElementById("name").value;
+			var email=document.getElementById("email").value;
+			var subject=document.getElementById("subject").value;
+			var message=document.getElementById("message").value;
+			
+			if(name=="")
+			{
+				alert("Please Enter Your Name");
+			}
+			else if(email=="")
+			{
+				alert("Please Enter e-mail Address");
+			}
+			else if(subject=="")
+			{
+				alert("Please Enter Subject");
+			}
+			else if(message=="")
+			{
+				alert("Please Write Message");
+			}
+			else 
+			{
+				alert("Message Sent Successfully !!!");
+			}
+	   }
+	   </script>
+    
+    <header class="header_area">
+        <div class="main_menu">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand logo_h" href="index.html" style="color: #B7B78A; font-size: 30px; font-weight: bold; justify-content: space-between;">DONATE &nbsp;FOR &nbsp;CHILDREN</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                   
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item">
+                              <a
+                                class="nav-link"
+                                href="index.html"
+                                style="color: #FEFCF3; font-size: 15px;"
+                                onMouseOver="this.style.color='#DBA39A'"
+                                onMouseOut="this.style.color='#FEFCF3'"
+                                >Home</a
+                              >
+                            </li>
+                            <li class="nav-item active">
+                              <a
+                                class="nav-link"
+                                style="color: #FEFCF3; font-size: 15px;"
+                                onMouseOver="this.style.color='#DBA39A'"
+                                >About</a
+                              >
+                            </li>
+                            <li class="nav-item">
+                              <a
+                                class="nav-link"
+                                href="contacthere.html"
+                                style="color: #FEFCF3; font-size: 15px;"
+                                onMouseOver="this.style.color='#DBA39A'"
+                                
+                                >Contact</a
+                              >
+                            </li>
+                          </ul>
+                        
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="contact_area section_gap" style="padding:200px 70px 20px 70px;">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="fa fa-home"></i>
+                            <h4 style="color: #FEFCF3;">Paras Chaturvedi</h4>
+              
+                        </div><br>
+                        <div class="info_item">
+                            <i class="fa fa-phone"></i>
+                            <h4><a href="#" style="color: #FEFCF3;">+91 9451297204</a></h4>
+                     
+                        </div><br>
+                        <div class="info_item">
+                            <i class="fa fa-envelope"></i>
+                            <h4><a href="#" style="color: #FEFCF3;">chaturvediparas14@gmail.com</a></h4>
+                            
+                        </div><br>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <form class="row contact_form" id="contactForm" novalidate="novalidate">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter e-mail Address">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <button type="submit" value="submit" class="btn primary_btn" onclick="validation()" style="color:black;font-size:15px; letter-spacing: 1px; font-weight: bold; border-radius: 35px;">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+      </body>
+</html>
